@@ -1,0 +1,77 @@
+\documentclass[a4j,10pt]{jarticle}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{url}
+\usepackage{bm}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\pagestyle{empty}
+\setlength\textheight{255mm}
+\setlength\textwidth{170mm}
+\setlength\topmargin{-5mm}
+\setlength\oddsidemargin{-5mm}
+\setlength\headheight{0mm}
+\setlength\headsep{0mm}
+\setlength\columnsep{8mm}
+
+\newcommand{\tour}{順位戦}
+
+%========================================
+\title{
+    \LARGE\bf
+    素数大富豪\tour \quad 概要
+}
+\author{はち}
+\date{2025-03-13}
+%========================================
+\begin{document}
+    \maketitle
+    \thispagestyle{empty}
+
+    \section{開催目的}
+    幅広い実力のプレイヤーが参加しやすい大会を開催する．
+
+    \section{会期}
+    参加者募集期間：$04$月$01$日から$05$月$31$日まで．
+
+    大会開催期間：$06$月$01$日から翌年$01$月$31$日までの$8$ヶ月．
+
+    \section{参加}
+    Google Forms を用いて参加者を募集する．
+
+    普段素数大富豪をするときに使用しているハンドルネームがある場合はそれを用いて参加してください．
+
+    \section{ルール}
+    \section{概要}
+    \tour 変則リーグ戦．仮順位が近い者同士で対戦し順位を決定する．
+
+    \subsection{仮順位}
+    最後に参加した\tour を第$x$期，そのときの順位を$y$位，参加者募集期間開始時のレーティングを$z$とする．
+    ただし，
+    \begin{itemize}
+        \item 過去の\tour に参加したことがない者は，$x=-\infty$, $y=\infty$ とする．
+        \item レーティングを持ってない者は，$z=-\infty$ とする．
+    \end{itemize}
+
+    これらを用いて仮順位を以下のように決定する．
+
+    \begin{enumerate}
+        \item $y-x$ が小さい者を上の順位とする．
+        \item 1. が同じ場合，$x$ が大きい者を上の順位とする．
+        \item 2. も同じ場合，$z$ が上の者を上の順位とする．
+    \end{enumerate}
+
+    \subsection{1試合の流れ}
+    
+    \subsection{順位決定方法}
+
+\end{document}
+
+%latexmk -latex=platex -pdfdvi rule_01.tex
